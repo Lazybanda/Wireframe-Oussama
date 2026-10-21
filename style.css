@@ -1,0 +1,116 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0 0 80px;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #222222;
+    background-color: #f4f6f8;
+}
+
+
+
+.page-header {
+    padding: 40px 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: darkolivegreen;
+}
+
+.page-header h1 {
+    margin: 0 0 10px;
+    font-size: 2rem;
+}
+
+.page-header p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background-color: #ffffff;
+    border: 1px solid #d8dee5;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+    margin: 0 0 16px;
+    color: darkgreen;
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+.card p {
+    margin: 0 0 20px;
+}
+
+.card a {
+    align-self: flex-start;
+    margin-top: auto;
+    color: darkgreen;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.card a:hover {
+    color: darkgreen;
+}
+
+.card a:focus-visible {
+    outline: 3px solid darkgreen;
+    outline-offset: 4px;
+    border-radius: 2px;
+}
+
+
+
+
+.page-footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    padding: 16px 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: darkgreen;
+}
+
+.page-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
